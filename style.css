@@ -24,9 +24,15 @@ img{
     height: 100%;
     width: 100%;
 }
-body{
-    background-image: linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)),url("../images1/pexels-chan-walrus-958545.jpg");
+.container{
+    background-image: linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),url("../../images1/pexels-chan-walrus-958545.jpg");
     background-size: cover;
+    position:relative;
+    width: 100%;
+    height: 655px ;
+}
+.hea{
+    position: relative;
 }
 .header{
     margin: auto;
@@ -47,7 +53,10 @@ body{
     font-weight: 700;
     color:crimson;
     position: relative;
-    left: 2%;
+    left: 25%;
+}
+#home{
+    transition:0.5s;
 }
 .navlinks{
     display: flex;
@@ -70,12 +79,9 @@ body{
 .navlinks a:hover::after{
     width: 100%;
 }
-.mid{
-    margin: auto;
-}
 .head{
     display: inline-block;
-    position: absolute;
+    position: relative;
     margin-top: 20%;
     left: 40%;
     background-color: var(--primary);
@@ -92,8 +98,45 @@ body{
     text-align: center;
     position: absolute;
     left: 22%;
-    bottom: 49%;
+    bottom: 33%;
     font-size: 36px;
     text-shadow: 3px 3px 10px black;
     color: var(--primary);
 }
+.Home{
+    text-align: center;
+    padding-top: 50px;
+    font-size: 24px;
+    background-color: var(--secondary);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image:linear-gradient(rgba(0,0,0,0.80),rgba(0,0,0,0.80)),url("../../images1/pexels-mister-mister-3434523.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.dec{
+    color: var(--primary);
+    padding-bottom: 40px;    
+}
+.dec h1,p{
+    margin-left: -50px;
+}
+.dec1{
+    background-color: var(--primary);
+    color: var(--secondary);
+    padding-top: 30px;
+    font-size: 20px;
+    width: 60%;
+    text-align: center;
+    margin-left: 130px;
+    margin-top: 15px;
+    padding: 20px;
+    border-radius: 15px 55px;
+}
+.ho-img{
+    height: 350px;
+    width:160%;
+    position: relative;
+    left:-10%;
+    box-shadow:1px 1px 20px var(--primary);}
