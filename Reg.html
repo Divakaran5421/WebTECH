@@ -5,14 +5,21 @@
   </title>
 </head>
 <body>
-  <h1>Registration Form</h1> //Using Javascript to submit response 
-  <label>Name:</label><input type="text" value="Name">
-  <label>Class:</label><input type="text" value="class">
-  <button onclick="submit()">Submit</button>
+  <h1>Registration Form</h1>
+  <form name="myForm">
+  <label>Name:</label><input type="text" name="Name">
+  <label>Class:</label><input type="text" name="class">
+  <button onsubmit="submit()">Submit</button>
+  </form>
   <script>
     function submit()
-      {
-        alert("Submitted Successfully");
+      { 
+         x = document.forms["myForm"]["Name"].value;
+         if(x=="")
+         {
+          alert("Please type anything);
+         }
+          return false;
       }
   </script>
 </body>
