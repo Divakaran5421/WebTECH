@@ -79,6 +79,25 @@ img{
 .navlinks a:hover::after{
     width: 100%;
 }
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    width:160px;
+    position: absolute;
+    z-index: 1;
+    transition: 0.7s;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.dropdown-content a{
+    display: block;
+    background-color: var(--primary);
+    padding: 10px 15px;
+}
 .head{
     display: inline-block;
     position: relative;
