@@ -6,10 +6,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+  .dropdown {
+  position: relative;
+  display: inline-block;
+  
+  }
+  .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: grey;
+  font-family:Helvetica;
+  min-width: 200px;
+  z-index: 1;
+  }
+
+  .dropdown-content a {
+  color: white;
+  font-family:Helvetica;
+  opacity: 60%;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  }
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content a:hover {
+  color: white;
+  background-color:rgb(67, 63, 63);
+}
+.nav-item{
+  padding-left: 25px;
+}
+  </style>
 </head>
 <body>
 <div class="container-fluid">
-    <div class="text-center text-uppercase text-white bg-dark " style="margin-top: 25px;">
+    <div class="text-center text-uppercase text-white bg-dark " style="padding-top: 25px;">
         <h2> Sri ramakrishna mission vidyalaya <br>
         college of arts and science <br><span class="h5">Coimbatore-20</span></h2>
     </div>
@@ -19,7 +53,15 @@
         <a class="nav-link" href="#"><h5>Home</h5></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#"><h5>About us</h5></a>
+        <div class="dropdown">
+          <a class="nav-link" href="#" ><h5>About us</h5></a>
+          <div class="dropdown-content h6">
+          <a href="#">A Institution</a>
+          <a href="#">Sri Ramakrishnar</a>
+          <a href="#">Sri Saradhamal</a>
+          <a href="#">Swami Vivekanadha</a>
+          </div>
+        </div>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#"><h5>Facilities</h5></a>
@@ -31,15 +73,13 @@
         <a class="nav-link" href="#"><h5>Contact us</h5></a>
       </li>
     </ul>
-</nav><br><br>
+</nav><br>
 <div class="row">
 <div class="col-sm-4 h5 text-center">
-    <div class="panel-group">
-        <div class="panel panel-primary">
-            <div class="panel-heading">News and Events</div>
-            <div class="panel-body">Student results,Nov 2018 published college day celebration on 05/03/2023</div>
+        <div class="jumpodron">
+            <h1 class="h1">News and Events</h1><hr>
+            <p><a href="https://www.result.srmvcas.org/"> Student results</a>, Nov 2018 published <hr> college day celebration on 05/03/2023</p>
         </div>
-    </div>
 </div>
 <div class="col-sm-8">
     <div class="h5">
@@ -48,11 +88,11 @@
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto, eos? Voluptatum laborum expedita cupiditate quos, necessitatibus exercitationem aliquid architecto labore esse dolor voluptas pariatur possimus dolorem voluptatem quod accusamus omnis.
     </div>
 </div>
-</div><br><br>
-<div class="container-fluid text-uppercase text-white bg-dark">
-    <div class="row" style="padding: 15px;">
-        <div class="col-sm-5 text-capitilize">
-            <h6>Copyright@ 2015.All Rights reserverd by SRMVCAS <br> an institution of Ramakrishna Mission Vidyalaya </h6>
+</div><br>
+<div class="container-fluid text-uppercase text-white bg-dark  text-center">
+    <div class="row" style="padding:25px 15px;">
+        <div class="text-capitilize">
+            <h5>Copyright@ 2015. All Rights reserverd by SRMVCAS <br> an institution of Ramakrishna Mission Vidyalaya </h5>
         </div>
     </div>
 </div>
