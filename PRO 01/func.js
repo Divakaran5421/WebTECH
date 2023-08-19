@@ -15,7 +15,11 @@ function feed() //Feedback function
                 {
                     alert('Thank you for registering...');
                 }
-            }/*
+            }
+function clearValue(){
+            document.getElementById('name').value='';
+}
+/*
 function feed() //text change functions
 {
     document.getElementById('demo').innerHTML=("Thanks for submitting...");
