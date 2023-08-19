@@ -17,7 +17,8 @@ function feed() //Feedback function
                 }
             }
 function clearValue(){
-            document.getElementById('name').value='';
+    document.getElementById('name').value='';
+    document.getElementById('email').value='';
 }
 /*
 function feed() //text change functions
