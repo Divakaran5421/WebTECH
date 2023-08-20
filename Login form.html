@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        body{
+            position: relative;
+            padding: 0%;
+            margin: 0%;
+            background-color: #192a56;
+        }
+        .container{
+            position: absolute;
+            top: 50vh;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            height: 40px;
+            width: 100px;
+            background-color: brown;
+            border: 4px solid yellow;
+            border-radius: 50px;
+            transition-delay: 1s;
+            transition-timing-function: ease-in-out;
+            transition-duration: 0.5s;
+        }
+        .container:hover{
+            width: 240px;
+            height: 140px;
+            border: solid 2px red;
+            transition-delay: 0s;
+        }
+        .container:hover .text{
+            width: 160px;
+            opacity: 1;
+            transition-delay: 0s;
+        }
+        .container:hover .btn{
+            margin-top: 10px;
+            transition-delay: 0s;
+        }
+        .text{
+            width:0px;
+            line-height:25px;
+            opacity:0;
+            font-size:24px;
+            text-align:center;
+            color:black;
+            margin-left:40px;
+            margin-top:5px; 
+            border:none;
+            background:white;
+            transition-delay:0s;
+            transition-duration:0.5s;
+            border-radius:12px;
+        }
+        .btn{
+            width:100px;
+            height:40px;
+            margin-left:50%;  
+            margin-bottom:10px;
+            transform:translate(-50%,0);
+            background:#273c75;
+            border:solid 3px #192a56;
+            border-radius:50px;
+            font-size:24px;
+            color:#7f8fa6;
+            transition:0.5s;
+            transition-delay:1s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input type="submit" class="btn" value="Login"><br>
+        <input type="text" class="text" placeholder="UserName"><br>
+        <input type="password" class="text" placeholder="Password">
+    </div>
+</body>
+</html>
