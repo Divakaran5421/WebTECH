@@ -8,6 +8,11 @@
 <body>
     <button onclick="document.getElementById('myImage').src='Bulb-On.png'">ON</button>
     <img id="myImage" src="Bulb-Off (2).png" height="250px">
-    <button onclick="document.getElementById('myImage').src='Bulb-Off (2).png'">OFF</button>
+    <button onclick="bulbOn()">OFF</button>
+    <script>
+        function bulbOn(){
+            document.getElementById('myImage').src='Bulb-Off (2).png';
+        }
+    </script>
 </body>
 </html>
